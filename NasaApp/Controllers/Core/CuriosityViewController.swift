@@ -27,7 +27,7 @@ class CuriosityViewController: UIViewController {
         return collectionView
     }()
     
-    var dataSource = ["chemcam","fhaz","mast","navcam","rhaz"]
+    var dataSource = ["ALL","chemcam","fhaz","mast","navcam","rhaz"]
     
     var limit = 5
     var totalImages = 0
@@ -196,8 +196,15 @@ extension CuriosityViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        APICaller.shared.getCameraFilterPhotos(roverName: "curiosity", camera: dataSource[indexPath.row], pageNo: 0) { [weak self] result in
+        var selectCamera = ""
+    
+        if indexPath.row == 0 {
+            selectCamera = ""
+        }
+        else {
+            selectCamera = "=\(dataSource[indexPath.row])"
+        }
+        APICaller.shared.getCameraFilter(roverName: "curiosity", camera: selectCamera, pageNo: 0) { [weak self] result in
             switch result {
             case .success(let photos):
                 self?.photos = photos

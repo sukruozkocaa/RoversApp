@@ -23,54 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C88D914D-FDB9-4B46-81F6-4B8942E8E422"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NasaApp/Manager/APICaller.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
-            landmarkName = "getCameraFilterSpiritPhotos(roverName:camera:pageNo:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C88D914D-FDB9-4B46-81F6-4B8942E8E422 - 4414e9bd67d2b901"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NasaApp.APICaller.getCameraFilterSpiritPhotos(roverName: Swift.String, camera: Swift.String, pageNo: Swift.Int, completion: (Swift.Result&lt;Swift.Array&lt;NasaApp.OSPhoto&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "NasaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sukruozkoca/Desktop/NasaApp/NasaApp/Manager/APICaller.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "1484">
-               </Location>
-               <Location
-                  uuid = "C88D914D-FDB9-4B46-81F6-4B8942E8E422 - 2d653e3db7a1467b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in NasaApp.APICaller.getCameraFilterSpiritPhotos(roverName: Swift.String, camera: Swift.String, pageNo: Swift.Int, completion: (Swift.Result&lt;Swift.Array&lt;NasaApp.OSPhoto&gt;, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "NasaApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sukruozkoca/Desktop/NasaApp/NasaApp/Manager/APICaller.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "47"
-                  endingLineNumber = "47"
-                  offsetFromSymbolStart = "112">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "13208822-BAFE-4E3D-85B4-B6C9E7C1851E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

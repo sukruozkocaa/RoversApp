@@ -28,7 +28,7 @@ class SpiritViewController: UIViewController {
     private let transparentView = UIView()
     private let tableView = UITableView()
     
-    var dataSource = ["NAVCAM","PANCAM"]
+    var dataSource = ["ALL","NAVCAM","PANCAM"]
     
     var limit = 5
     var totalImages = 0
@@ -171,7 +171,16 @@ extension SpiritViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        APICaller.shared.getCameraFilterSpiritPhotos(roverName: "spirit",camera: dataSource[indexPath.row], pageNo: 0) { [weak self] result in
+        var selectCamera = ""
+    
+        if indexPath.row == 0 {
+            selectCamera = ""
+        }
+        else {
+            selectCamera = "=\(dataSource[indexPath.row])"
+        }
+        
+        APICaller.shared.getOSCameraFilter(roverName: "spirit",camera: selectCamera, pageNo: 0) { [weak self] result in
             switch result {
             case .success(let photos):
                 self?.photos = photos
